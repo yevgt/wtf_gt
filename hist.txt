@@ -1,0 +1,30 @@
+  969  vim .gitignore 
+  970  vim README.md 
+  971  gstat
+  972  git add --all
+  973  gstat
+  974  git restore --staged README.md 
+  975  gstat
+  976  git commit -m "file ignore"
+  977  git uncommit
+  978  git --help
+  979  git restore
+  980  git rm -r --cached .gitignore 
+  981  gstat
+  982  git restore --staged .gitignore 
+  983  gstat
+  984  git push origin main
+  985  git checkout -b test
+  986  vim .gitignore 
+  987  git checkout main
+  988  git checkout test
+  989  git add .gitignore 
+  990  git commit -m "modified file .gitignore"
+  991  git push origin test
+  992  git add README.md 
+  993  git commit -m "added new file"
+  994  git push origin test
+  995  git commit --amend
+  996  git push origin test -f
+  997  git push origin test
+  998  history | tail -30 > hist.txt
